@@ -40,9 +40,9 @@ $(document).ready(function(){
   $(document).keydown(function(){
     var key = event.which;
     if (key == 39 || key == 100) {
-      nextImg();
+      nextButton.click(nextImg());
     } else if (key == 37 || key == 102) {
-      prevImg();
+      prevButton.click(prevImg());
     }
     console.log(key);
   });
