@@ -37,15 +37,15 @@ $(document).ready(function(){
       iActive.prev().addClass('active');
     }
   });
+  $(document).keydown(function(){
+    var key = event.which;
+    if (key == 39 || key == 100) {
+      nextImg();
+    } else if (key == 37 || key == 102) {
+      prevImg();
+    }
+    console.log(key);
+  });
 
 });
 // sto coso non funziona
-$(document).keydown(function(){
-  var key = event.which;
-  if (key == 39 || key == 100) {
-    nextImg();
-  } else if (key == 37 || key == 102) {
-    prevImg();
-  }
-  console.log(key);
-});
