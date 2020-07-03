@@ -40,11 +40,12 @@ $(document).ready(function(){
 
 });
 // sto coso non funziona
-$(document).keypress(function(){
+$(document).keydown(function(){
   var key = event.which;
   if (key == 39 || key == 100) {
     nextImg();
   } else if (key == 37 || key == 102) {
     prevImg();
   }
+  console.log(key);
 });
