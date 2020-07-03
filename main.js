@@ -9,9 +9,9 @@ $(document).ready(function(){
   $(document).keydown(function(){
     var key = event.which;
     if (key == 39 || key == 100) {
-      nextButton.click(nextImg());
+      nextImg();
     } else if (key == 37 || key == 102) {
-      prevButton.click(prevImg());
+      prevImg();
     }
     console.log(key);
   });
@@ -19,7 +19,7 @@ $(document).ready(function(){
 });
 
 
-function nextImg(){
+function prevImg(){
 
   var imgActive = $('.slider-wrapper img.active');
   imgActive.removeClass('active');
@@ -36,7 +36,7 @@ function nextImg(){
       iActive.prev().addClass('active');
 }};
 
-    function prevImg(){
+    function nextImg(){
 
       var imgActive = $('.slider-wrapper img.active');
       imgActive.removeClass('active');
